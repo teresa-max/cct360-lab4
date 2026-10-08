@@ -119,3 +119,15 @@ button:disabled {
   font-size: 14px;
   line-height: 1.7;
 }
+
+.credit {
+  margin: 14px 0 0;
+  color: #b9bac5;
+  font-size: 11px;
+  text-align: center;
+}
+
+.credit a {
+  color: inherit;
+  text-underline-offset: 3px;
+}
