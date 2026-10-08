@@ -7,15 +7,34 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Let It Develop</h1>
-    <p>Watch the image. Decide when to stop.</p>
+    <main>
+      <p class="label">THE DARKROOM</p>
+      <h1>Let It Develop</h1>
+      <p class="intro">Watch the image. Decide when to stop.</p>
 
-    <div class="tray">
-      <img id="photo" src="images/photo.jpg" alt="Black-and-white portrait" />
-    </div>
+      <div class="tray">
+        <div class="paper">
+          <img
+            id="photo"
+            src="images/photo.jpg"
+            alt="Black-and-white portrait with striped window light"
+          />
+        </div>
+      </div>
 
-    <!-- Button interaction will be added next. -->
-    <button disabled>Develop</button>
+      <div class="controls">
+        <button id="develop-button" onclick="developPhoto()">Develop</button>
+        <button id="stop-button" onclick="stopPhoto()">Stop</button>
+        <button onclick="resetPhoto()">Start Again</button>
+      </div>
+
+      <p class="instruction">
+        Click Develop to reveal the photograph.<br />
+        Click Stop when you think it is ready.
+      </p>
+
+      <p id="message" aria-live="polite"></p>
+    </main>
 
     <script src="script.js"></script>
   </body>
